@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utilizando seletores</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            font: normal 18pt arial;
+        }
+        h1{
+            color: aquamarine;
+        }
+        h2{
+            margin: 0;
+        }
+
+        .res{
+            margin: 8px 0 15px;
+            color: bisque;
+        }
+        input{
+            padding: 8px 0;
+        }
+        .button{
+            background-color: aqua;
+            font-weight: bold;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Operações simples</h1>
+  <div id="adicionar">
+      <h2>Somando valores</h2>
+      <input type="number" name="valor1" id="valor1"> +
+      <input type="number" name="valor2" id="valor2">
+      <input type="button" value="Calcular" class="button"  onclick="somar()">
+      <div id="res"> Resultado </div>
+  </div>
+
+  <div id="subitrair">
+    <h2>Subitraindo Valores</h2>
+    <input type="number" name="valor3" id="valor3">
+    <input type="number" name="valor4" id="valor4">
+    <input type="button" value="Calcular" class="button">
+    <div id="res2">Resultado</div>
+  </div>
+ 
+</body>
+
+<script>
+     function somar(){
+        var v1 = window.document.getElementById('valor1')
+        var v2 = window.document.getElementById('valor2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(v1.value)
+        var n2 = Number(v2.value)
+        var s1 = n1 + n2
+        res.innerText = ` A soma entre ${n1} + ${n2} é de ${s1} `
+    }
+
+    
+
+</script>
+</html>

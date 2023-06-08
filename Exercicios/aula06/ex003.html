@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial; /* isso é um comentário em CSS*/
+        }
+        h1{
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!--ISSO É UM COMENTÁRIO EM HTML-->
+    <p>Já me livrei da maldição!!!</p>
+
+    <script>
+       var n1 = Number(window.prompt('Digite um número: ')) 
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var s = n1 + n2
+       window.alert(`A soma entre ${n1} e ${n2} é de ${s} `) //concatenação
+       // (number + number) para adição
+       // (string + string)   para concatenação 
+       // Number.parseInt(valor a ser convertido) para converter números inteiros
+       // Number.parseFloat(valor a ser convertido) para converter números reais
+       // Number(valor a ser convertido) para ele identificar sozinho o tipo
+       // String(Valor a ser convertido) para converter para string
+       // 'Eu estou aprendendo valor' --> não faz interpolação
+       // 'Eu estou aprendendo' + valor --> usa concatenação
+       // `Eu estou aprendendo ${valor}` --> usa tamplate string
+    </script>
+</body>
+</html>

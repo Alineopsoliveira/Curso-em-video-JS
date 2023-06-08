@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            background-color: rgb(42,139,42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        Interaja...
+    </div>
+
+    <script>
+        //esse programa ira criar alguns eventos que serão executados conforme determinado na função
+        // O addEventListener irá prestar atenção no que deverá ser executado
+        var a = window.document.getElementById('area') // ligação feita com o elemento que receberá o evento
+        a.addEventListener('click' , clicar) //ligação para o evento clicar
+        a.addEventListener('mouseenter' , entrar) //ligação para o evento entrar
+        a.addEventListener('mouseout' , sair) //ligação para o evento sair
+
+        function clicar(){ //o clicar indica que o bloco será excutado quando clicar no
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'Entrou!'
+        }
+        function sair(){
+           a.innerText = 'Saiu!'
+           a.style.background = 'green'
+        } 
+    </script>
+</body>
+</html>
