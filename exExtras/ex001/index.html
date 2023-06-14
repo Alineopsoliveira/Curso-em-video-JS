@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com números</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        input {
+            padding: 35px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="calculo">
+            <h1>Trabalhando com números</h1>
+            <input type="button" value="Clique  para calcular" id="calcular">
+        </div>
+        <div id="res">
+            <p>O resultado vem aqui...</p>
+        </div>
+    </main>
+    <script>
+         window.alert('Seja Bem-Vindo(a) ao meu site!') 
+        var calcular = window.document.querySelector('input#calcular')
+        var res = window.document.querySelector('div#res')
+        calcular.addEventListener('click' , clicar)
+
+        function clicar(){
+            var n = window.prompt('Digite um número:')
+           
+            var d = Number(n * 2)
+            var m = Number(n / 2)
+            res.innerHTML =`O dobro de ${n} é ${d} e a metade é ${m}!`
+            
+        }
+    </script>
+</body>
+</html>
